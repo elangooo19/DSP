@@ -1,0 +1,258 @@
+/* Official Government Login Portal Styles (Clean Modern White Theme) */
+
+.gov-login-wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+}
+
+.gov-login-main {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 1.5rem;
+  background-color: #ffffff;
+}
+
+.gov-login-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-top: 4px solid #002147;
+  border-radius: 8px;
+  padding: 2.25rem 2.25rem;
+  width: 100%;
+  max-width: 520px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.gov-login-card-header {
+  text-align: center;
+  padding-bottom: 1.25rem;
+  border-bottom: 1px solid #f1f5f9;
+  margin-bottom: 1.5rem;
+}
+
+.gov-login-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.74rem;
+  font-weight: 700;
+  color: #b45309;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  margin-bottom: 0.4rem;
+}
+
+.gov-login-card-header h2 {
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: #0f172a;
+  margin: 0 0 0.3rem 0;
+  letter-spacing: -0.3px;
+}
+
+.gov-login-card-header p {
+  font-size: 0.84rem;
+  color: #64748b;
+  margin: 0;
+}
+
+/* Role Selector */
+.gov-role-selector {
+  margin-bottom: 1.25rem;
+}
+
+.gov-field-label {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #334155;
+  margin-bottom: 0.45rem;
+}
+
+.gov-role-buttons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
+}
+
+.gov-role-btn {
+  padding: 0.7rem 0.45rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  background: #ffffff;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.35rem;
+  transition: all 0.2s ease;
+  color: #475569;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.02);
+}
+
+.gov-role-btn:hover {
+  border-color: #cbd5e1;
+  background: #f8fafc;
+}
+
+.gov-role-btn.active {
+  border-color: #002147;
+  background: #002147;
+  color: #ffffff;
+  box-shadow: 0 2px 6px rgba(0, 33, 71, 0.15);
+}
+
+.gov-role-btn-icon {
+  display: inline-flex;
+}
+
+.gov-role-btn.active .gov-role-btn-icon {
+  color: #f59e0b;
+}
+
+.gov-role-btn-text {
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-align: center;
+  line-height: 1.2;
+}
+
+/* Form */
+.gov-login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.15rem;
+}
+
+.gov-login-form .form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.gov-login-form label {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: #334155;
+}
+
+.gov-login-form input {
+  background: #ffffff;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  padding: 0.7rem 0.85rem;
+  font-size: 0.92rem;
+  color: #0f172a;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.gov-login-form input:focus {
+  border-color: #002147;
+  box-shadow: 0 0 0 3px rgba(0, 33, 71, 0.08);
+  outline: none;
+  background: #ffffff;
+}
+
+.req {
+  color: #b91c1c;
+  font-weight: 800;
+}
+
+.gov-submit-btn {
+  width: 100%;
+  padding: 0.8rem;
+  font-size: 0.95rem;
+  font-weight: 700;
+  margin-top: 0.5rem;
+  border-radius: 6px;
+}
+
+/* Disclaimer */
+.gov-login-disclaimer {
+  margin-top: 1.25rem;
+  padding: 0.75rem 0.9rem;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  font-size: 0.74rem;
+  color: #64748b;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  line-height: 1.45;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02);
+}
+
+/* Demo Panel in White */
+.gov-demo-panel {
+  margin-top: 1.25rem;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  padding: 0.9rem 1rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02);
+}
+
+.gov-demo-header {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 0.5rem;
+}
+
+.gov-demo-table {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  font-size: 0.76rem;
+}
+
+.demo-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.demo-role {
+  color: #1e293b;
+  font-weight: 600;
+}
+
+.demo-row code {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  padding: 0.15rem 0.4rem;
+  border-radius: 3px;
+  font-family: var(--gov-font-mono, monospace);
+  color: #0f172a;
+  font-size: 0.76rem;
+}
+
+/* Login Footer */
+.gov-login-footer {
+  background: #ffffff;
+  border-top: 1px solid #f1f5f9;
+  padding: 1.25rem 1.5rem;
+  text-align: center;
+  font-size: 0.78rem;
+  color: #64748b;
+}
+
+.gov-login-footer-inner p {
+  margin: 0;
+}
+
+.gov-login-footer-sub {
+  margin-top: 0.25rem !important;
+  font-size: 0.72rem;
+  color: #94a3b8;
+}

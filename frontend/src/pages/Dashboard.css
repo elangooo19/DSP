@@ -1,0 +1,67 @@
+/* Shared Dashboard Styles (GIGW Compliant) */
+
+.dashboard {
+  min-height: 100vh;
+  background-color: var(--gov-bg, #f8fafc);
+  display: flex;
+  flex-direction: column;
+}
+
+.dash-header {
+  background: #002147;
+  color: #ffffff;
+  padding: 0.85rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #001733;
+}
+
+.dash-brand {
+  font-size: 1.15rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.dash-user {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 0.88rem;
+}
+
+.dash-main {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.welcome-card {
+  background: #ffffff;
+  border: 1px solid #cbd5e1;
+  border-top: 4px solid #002147;
+  border-radius: var(--gov-radius, 4px);
+  padding: 2.5rem 2rem;
+  text-align: center;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  max-width: 480px;
+  width: 100%;
+}
+
+.welcome-card h2 {
+  font-size: 1.45rem;
+  color: #002147;
+  margin-bottom: 0.4rem;
+}
+
+.welcome-card p {
+  color: #64748b;
+  margin-bottom: 1.5rem;
+  font-size: 0.88rem;
+}
+
+.badge-customer { background: #f0fdf4; color: #15803d; border: 1px solid #86efac; }
+.badge-shop     { background: #eff6ff; color: #1d4ed8; border: 1px solid #bfdbfe; }
+.badge-admin    { background: #fdf2f8; color: #be185d; border: 1px solid #fbcfe8; }

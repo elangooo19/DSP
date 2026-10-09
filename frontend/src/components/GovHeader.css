@@ -1,0 +1,306 @@
+/* Government Portal Header Styles (GIGW Compliant) */
+
+.gov-header {
+  width: 100%;
+  background: #ffffff;
+  border-bottom: 3px solid #002147;
+  position: relative;
+  z-index: 200;
+  box-shadow: 0 3px 10px rgba(0, 33, 71, 0.08);
+}
+
+/* Indian National Tricolor Ribbon */
+.gov-tricolor-strip {
+  height: 4px;
+  width: 100%;
+  background: linear-gradient(
+    to right,
+    #ff9933 0%,
+    #ff9933 33.33%,
+    #ffffff 33.33%,
+    #ffffff 66.66%,
+    #138808 66.66%,
+    #138808 100%
+  );
+}
+
+/* Top Utility Accessibility Bar */
+.gov-top-utility {
+  background: #001a38;
+  color: #e2e8f0;
+  padding: 0.35rem 1.5rem;
+  font-size: 0.76rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.gov-top-left {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+}
+
+.gov-top-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  color: #cbd5e1;
+}
+
+.gov-top-item strong {
+  color: #ffffff;
+}
+
+.gov-top-right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.gov-access-btn-group {
+  display: inline-flex;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.gov-access-btn {
+  background: transparent;
+  color: #cbd5e1;
+  border: none;
+  padding: 0.15rem 0.45rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s;
+  border-right: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.gov-access-btn:last-child {
+  border-right: none;
+}
+
+.gov-access-btn:hover {
+  background: #ff9933;
+  color: #001a38;
+}
+
+.gov-lang-badge {
+  background: rgba(255, 255, 255, 0.12);
+  padding: 0.15rem 0.5rem;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #ff9933;
+  transition: all 0.2s;
+}
+
+.gov-lang-badge:hover {
+  background: #ff9933;
+  color: #001a38;
+}
+
+/* Main Department Brand Header */
+.gov-brand-container {
+  padding: 0.85rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+  background: #ffffff;
+}
+
+.gov-brand-left {
+  display: flex;
+  align-items: center;
+  gap: 1.1rem;
+}
+
+.gov-emblem-wrap {
+  width: 58px;
+  height: 58px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(circle, #f8fafc 60%, #e2e8f0 100%);
+  border-radius: 50%;
+  border: 2px solid #002147;
+  box-shadow: 0 2px 6px rgba(0, 33, 71, 0.15);
+  padding: 4px;
+}
+
+.gov-brand-titles {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.gov-state-name {
+  font-size: 0.95rem;
+  font-weight: 800;
+  color: #002147;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.gov-state-name span.tamil {
+  color: #991b1b;
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+.gov-dept-name {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: #334155;
+}
+
+.gov-dept-name span.tamil-dept {
+  color: #475569;
+  font-size: 0.78rem;
+}
+
+.gov-portal-name {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #b45309;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-top: 0.1rem;
+}
+
+.gov-portal-badge {
+  background: #002147;
+  color: #ffffff;
+  padding: 0.1rem 0.4rem;
+  border-radius: 3px;
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+}
+
+.gov-brand-right {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.gov-badge-box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: right;
+  gap: 0.2rem;
+}
+
+.gov-initiative-tag {
+  font-size: 0.74rem;
+  font-weight: 700;
+  color: #002147;
+  background: #f1f5f9;
+  padding: 0.2rem 0.6rem;
+  border-radius: 4px;
+  border: 1px solid #cbd5e1;
+}
+
+.gov-statute-ref {
+  font-size: 0.68rem;
+  color: #64748b;
+  font-style: italic;
+}
+
+.gov-india-emblem-wrap {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-left: 1px solid #e2e8f0;
+  padding-left: 1rem;
+}
+
+/* Secondary Gazette Strip */
+.gov-gazette-strip {
+  background: linear-gradient(90deg, #002147 0%, #0b3b60 100%);
+  color: #ffffff;
+  padding: 0.35rem 1.5rem;
+  font-size: 0.75rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.gov-gazette-left {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-weight: 600;
+}
+
+.gov-gazette-pill {
+  background: #ff9933;
+  color: #001a38;
+  font-size: 0.65rem;
+  font-weight: 800;
+  padding: 0.15rem 0.45rem;
+  border-radius: 3px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.gov-gazette-right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 0.72rem;
+  color: #94a3b8;
+}
+
+.gov-secure-indicator {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  color: #4ade80;
+  font-weight: 600;
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+  .gov-brand-right {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .gov-top-utility {
+    font-size: 0.7rem;
+    padding: 0.35rem 0.75rem;
+  }
+  .gov-brand-container {
+    padding: 0.6rem 0.75rem;
+  }
+  .gov-emblem-wrap {
+    width: 44px;
+    height: 44px;
+  }
+  .gov-state-name {
+    font-size: 0.85rem;
+  }
+  .gov-dept-name {
+    font-size: 0.75rem;
+  }
+}

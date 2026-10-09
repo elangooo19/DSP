@@ -1,0 +1,68 @@
+/* Point of Sale & Customer Verification Styles (GIGW Compliant) */
+
+.sell-section-title {
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+  color: #002147;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 0.25rem 0;
+}
+
+.sell-divider {
+  border: none;
+  border-top: 1px dashed #cbd5e1;
+  margin: 0.85rem 0;
+}
+
+.sell-avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 4px;
+  background: #002147;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.sell-customer-box {
+  background: #f8fafc;
+  border: 1px solid #cbd5e1;
+  border-radius: var(--gov-radius, 4px);
+  padding: 1.15rem;
+  margin-bottom: 0.75rem;
+}
+
+.sell-limit-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.65rem;
+  margin-top: 0.85rem;
+}
+
+.sell-limit-item {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 4px;
+  padding: 0.65rem 0.85rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.sell-limit-label {
+  font-size: 0.72rem;
+  color: #64748b;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+}
+
+.sell-limit-value {
+  font-size: 1rem;
+  font-weight: 800;
+  color: #0f172a;
+}

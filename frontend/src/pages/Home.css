@@ -1,0 +1,605 @@
+/* SADMS Public Homepage Styles */
+
+.home-wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #f8fafc;
+  color: #0f172a;
+}
+
+/* ── 1. Top Navbar: Brand Left, Right Corner Login Group ── */
+.home-navbar {
+  background: #002147;
+  color: #ffffff;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0, 33, 71, 0.18);
+  border-bottom: 2px solid #001733;
+}
+
+.nav-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0.75rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.nav-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.brand-logo-icon {
+  color: #f59e0b;
+}
+
+.nav-brand-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.brand-name {
+  font-size: 1.35rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+  line-height: 1.1;
+  color: #ffffff;
+}
+
+.brand-subtitle {
+  font-size: 0.72rem;
+  color: #94a3b8;
+  letter-spacing: 0.4px;
+}
+
+/* Right Corner Login Buttons */
+.corner-login-group {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.corner-login-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.48rem 0.9rem;
+  font-size: 0.82rem;
+  font-weight: 700;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: all 0.15s ease;
+  white-space: nowrap;
+}
+
+.corner-btn-customer {
+  background: #15803d;
+  color: #ffffff;
+  border: 1px solid #166534;
+}
+
+.corner-btn-customer:hover {
+  background: #166534;
+  transform: translateY(-1px);
+}
+
+.corner-btn-shop {
+  background: #0b5ed7;
+  color: #ffffff;
+  border: 1px solid #0a58ca;
+}
+
+.corner-btn-shop:hover {
+  background: #0a58ca;
+  transform: translateY(-1px);
+}
+
+.corner-btn-admin {
+  background: #1e293b;
+  color: #f1f5f9;
+  border: 1px solid #334155;
+}
+
+.corner-btn-admin:hover {
+  background: #0f172a;
+  border-color: #f59e0b;
+  color: #f59e0b;
+  transform: translateY(-1px);
+}
+
+/* ── 2. Compact Header Banner (Zero Essay Paragraphs) ── */
+.home-hero {
+  background: linear-gradient(180deg, #001733 0%, #002147 100%);
+  color: #ffffff;
+  padding: 2.5rem 1.5rem 2.75rem;
+  text-align: center;
+}
+
+.hero-container {
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 0.3rem 0.85rem;
+  border-radius: 20px;
+  font-size: 0.74rem;
+  font-weight: 700;
+  color: #f59e0b;
+  letter-spacing: 0.8px;
+  margin-bottom: 0.85rem;
+}
+
+.hero-title {
+  font-size: 2.1rem;
+  font-weight: 900;
+  letter-spacing: -0.5px;
+  line-height: 1.25;
+  color: #ffffff;
+  margin: 0 0 1.25rem 0;
+}
+
+.hero-tags-row {
+  display: flex;
+  gap: 0.65rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.hero-tag-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 0.35rem 0.75rem;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #e2e8f0;
+}
+
+/* ── 3. Single-Shop Sales Dashboard Section ── */
+.sales-section {
+  padding: 2.5rem 1.5rem;
+  background-color: #f8fafc;
+}
+
+.section-container {
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+.section-header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.section-eyebrow {
+  font-size: 0.74rem;
+  font-weight: 800;
+  color: #0b5ed7;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: block;
+  margin-bottom: 0.2rem;
+}
+
+.section-title {
+  font-size: 1.65rem;
+  font-weight: 800;
+  color: #002147;
+  margin: 0;
+  letter-spacing: -0.3px;
+}
+
+/* Shop Selector Dropdown */
+.shop-selector-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  background: #ffffff;
+  padding: 0.45rem 0.85rem;
+  border-radius: 4px;
+  border: 1px solid #cbd5e1;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.shop-select-label {
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: #334155;
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.shop-select-input {
+  border: 1px solid #cbd5e1;
+  background-color: #f8fafc;
+  padding: 0.4rem 0.75rem;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #002147;
+  cursor: pointer;
+  outline: none;
+}
+
+.shop-select-input:focus {
+  border-color: #002147;
+}
+
+/* Active Shop Identity Strip */
+.active-shop-strip {
+  display: flex;
+  align-items: center;
+  gap: 1.75rem;
+  flex-wrap: wrap;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-left: 4px solid #002147;
+  padding: 0.75rem 1.25rem;
+  border-radius: 4px;
+  margin-bottom: 1.5rem;
+  font-size: 0.85rem;
+}
+
+.active-shop-item {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  color: #475569;
+}
+
+.active-shop-item strong {
+  color: #0f172a;
+}
+
+/* 3 Sales Cards Grid */
+.sales-cards-loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  padding: 2.5rem;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  color: #64748b;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.spin-icon {
+  animation: spin 1.2s linear infinite;
+  color: #002147;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.sales-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+  margin-bottom: 1.75rem;
+}
+
+@media (max-width: 860px) {
+  .sales-cards-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.sales-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  padding: 1.35rem 1.5rem;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.sales-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.card-today {
+  border-top: 4px solid #15803d;
+}
+
+.card-month {
+  border-top: 4px solid #002147;
+}
+
+.card-year {
+  border-top: 4px solid #b45309;
+}
+
+.card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 0.75rem;
+}
+
+.card-period-tag {
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.6px;
+  color: #64748b;
+  display: block;
+}
+
+.card-heading {
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: #0f172a;
+  margin: 0.1rem 0 0 0;
+}
+
+.card-icon-bubble {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bubble-today {
+  background: #dcfce7;
+  color: #15803d;
+}
+
+.bubble-month {
+  background: #e0f2fe;
+  color: #0369a1;
+}
+
+.bubble-year {
+  background: #fef3c7;
+  color: #b45309;
+}
+
+.card-amount {
+  font-size: 1.85rem;
+  font-weight: 900;
+  color: #002147;
+  letter-spacing: -0.5px;
+  margin-bottom: 0.85rem;
+}
+
+.card-stats-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 0.75rem;
+  border-top: 1px solid #f1f5f9;
+  font-size: 0.8rem;
+  color: #64748b;
+}
+
+.stat-sub-item {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.stat-sub-item strong {
+  color: #0f172a;
+}
+
+/* ── 4. Recharts Sales Flow Chart (Week / Monthly / Year) ── */
+.analytics-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  padding: 1.5rem;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
+}
+
+.analytics-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.analytics-title {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: #002147;
+  margin: 0;
+}
+
+/* Timeframe Controls: Week / Monthly / Year */
+.timeframe-button-group {
+  display: inline-flex;
+  background: #f1f5f9;
+  padding: 3px;
+  border-radius: 4px;
+  border: 1px solid #e2e8f0;
+}
+
+.timeframe-btn {
+  background: transparent;
+  border: none;
+  padding: 0.45rem 1.15rem;
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: #475569;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.timeframe-btn.active {
+  background: #002147;
+  color: #ffffff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+}
+
+.timeframe-btn:hover:not(.active) {
+  background: #e2e8f0;
+  color: #0f172a;
+}
+
+.chart-render-wrapper {
+  width: 100%;
+  min-height: 340px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.chart-loading-state,
+.chart-empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  color: #64748b;
+  padding: 3rem 0;
+}
+
+.chart-tooltip {
+  background: #ffffff;
+  border: 1px solid #cbd5e1;
+  border-radius: 4px;
+  padding: 0.65rem 0.9rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+  font-size: 0.82rem;
+}
+
+.tooltip-title {
+  font-weight: 800;
+  color: #002147;
+  margin-bottom: 0.35rem;
+  border-bottom: 1px solid #e2e8f0;
+  padding-bottom: 0.2rem;
+}
+
+.tooltip-item {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.25rem;
+  margin-bottom: 0.2rem;
+}
+
+.text-amount strong { color: #002147; }
+.text-bottles strong { color: #15803d; }
+.text-txns strong { color: #b45309; }
+
+/* ── 5. Public Footer ── */
+.home-footer {
+  background: #001733;
+  color: #cbd5e1;
+  padding: 2.25rem 1.5rem 1.25rem;
+  margin-top: auto;
+  border-top: 3px solid #002147;
+}
+
+.footer-container {
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-links-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.footer-heading {
+  font-size: 0.78rem;
+  font-weight: 800;
+  color: #f59e0b;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  margin-bottom: 0.35rem;
+}
+
+.footer-links-group a,
+.footer-links-group span {
+  color: #cbd5e1;
+  text-decoration: none;
+  font-size: 0.82rem;
+}
+
+.footer-links-group a:hover {
+  color: #ffffff;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding-top: 1.25rem;
+  font-size: 0.76rem;
+  color: #94a3b8;
+}
+
+.footer-tech-tag {
+  color: #86efac;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .nav-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .corner-login-group {
+    width: 100%;
+    justify-content: flex-start;
+  }
+  .hero-title {
+    font-size: 1.65rem;
+  }
+}
+
+
+

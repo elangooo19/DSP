@@ -1,0 +1,494 @@
+/* Government Citizen Quota Ledger Styles (GIGW Compliant) */
+
+.customer-home-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* 1. Citizen Header */
+.gov-citizen-header {
+  background: #ffffff;
+  border: 1px solid #cbd5e1;
+  border-radius: var(--gov-radius, 4px);
+  padding: 1.25rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+
+.citizen-info-block {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.citizen-title-row {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  flex-wrap: wrap;
+}
+
+.citizen-title-row h2 {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #002147;
+  margin: 0;
+}
+
+.citizen-meta-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  font-size: 0.84rem;
+  color: #475569;
+}
+
+.meta-item {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.meta-label {
+  color: #64748b;
+}
+
+.meta-val {
+  color: #0f172a;
+}
+
+/* 2. Official Monthly Quota Entitlement Card */
+.gov-quota-card {
+  background: #ffffff;
+  border: 1px solid #cbd5e1;
+  border-top: 4px solid #002147;
+  border-radius: var(--gov-radius, 4px);
+  padding: 1.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.gov-quota-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  padding-bottom: 1.25rem;
+  border-bottom: 1px solid #e2e8f0;
+  margin-bottom: 1.25rem;
+}
+
+.quota-header-left {
+  flex: 1;
+  min-width: 280px;
+}
+
+.gov-dept-tag {
+  display: inline-block;
+  font-size: 0.74rem;
+  font-weight: 700;
+  color: #b45309;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 0.25rem;
+}
+
+.quota-headline {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #002147;
+  margin: 0 0 0.25rem 0;
+}
+
+.quota-subline {
+  font-size: 0.82rem;
+  color: #64748b;
+  margin: 0;
+}
+
+.quota-status-indicator {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.4rem;
+}
+
+.eligibility-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.45rem 0.9rem;
+  border-radius: 4px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+}
+
+.eligibility-badge.authorized {
+  background: #f0fdf4;
+  border: 1px solid #86efac;
+  color: #15803d;
+}
+
+.eligibility-badge.exhausted {
+  background: #fef2f2;
+  border: 1px solid #fca5a5;
+  color: #b91c1c;
+}
+
+.quota-reset-note {
+  font-size: 0.74rem;
+  color: #64748b;
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+/* Numerical Metrics */
+.gov-metrics-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+}
+
+.gov-metric-item {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 4px;
+  padding: 1rem 1.15rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.gov-metric-item.highlight-metric {
+  background: #f0fdf4;
+  border-color: #86efac;
+}
+
+.metric-title {
+  font-size: 0.76rem;
+  font-weight: 700;
+  color: #64748b;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+}
+
+.metric-number {
+  font-size: 1.85rem;
+  font-weight: 800;
+  color: #0f172a;
+  line-height: 1.1;
+}
+
+.metric-number.metric-available {
+  color: #15803d;
+}
+
+.metric-number.metric-consumed {
+  color: #002147;
+}
+
+.metric-number.metric-zero {
+  color: #b91c1c;
+}
+
+.metric-unit {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #64748b;
+}
+
+.metric-detail {
+  font-size: 0.75rem;
+  color: #64748b;
+  margin-top: 0.2rem;
+}
+
+.gov-progress-bar-wrap {
+  width: 100%;
+  height: 8px;
+  background: #e2e8f0;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-top: 0.5rem;
+}
+
+.gov-progress-bar-fill {
+  height: 100%;
+  transition: width 0.3s ease;
+}
+
+.gov-progress-bar-fill.fill-active {
+  background: #002147;
+}
+
+.gov-progress-bar-fill.fill-exhausted {
+  background: #b91c1c;
+}
+
+/* 3. Official 7-Unit Quota Coupon Matrix */
+.gov-ledger-section {
+  background: #ffffff;
+  border: 1px solid #cbd5e1;
+  border-radius: var(--gov-radius, 4px);
+  padding: 1.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+
+.ledger-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+}
+
+.ledger-header h3 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #002147;
+  margin: 0;
+}
+
+.ledger-sub {
+  font-size: 0.82rem;
+  color: #64748b;
+  margin: 0.25rem 0 0 0;
+}
+
+.ledger-legend {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #475569;
+}
+
+.legend-entry {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.legend-chip {
+  width: 12px;
+  height: 12px;
+  border-radius: 2px;
+}
+
+.legend-chip.claimed {
+  background: #64748b;
+}
+
+.legend-chip.available {
+  background: #15803d;
+}
+
+.quota-units-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 0.75rem;
+}
+
+@media (max-width: 1024px) {
+  .quota-units-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .quota-units-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .quota-status-indicator {
+    align-items: flex-start;
+  }
+}
+
+/* Formal Quota Unit Coupon Card (Clean, Simple, Government Standard) */
+.quota-unit-box {
+  background: #ffffff;
+  border: 1px solid #cbd5e1;
+  border-radius: 4px;
+  padding: 0.85rem 0.65rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0.5rem;
+  transition: all 0.15s ease;
+  position: relative;
+}
+
+.quota-unit-box.unit-available {
+  border: 1.5px solid #86efac;
+  background: #f0fdf4;
+}
+
+.quota-unit-box.unit-available:hover {
+  border-color: #15803d;
+  box-shadow: 0 2px 6px rgba(21, 128, 61, 0.15);
+}
+
+.quota-unit-box.unit-claimed {
+  border: 1px solid #e2e8f0;
+  background: #f8fafc;
+  opacity: 0.85;
+}
+
+.unit-top {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.7rem;
+  font-weight: 700;
+  border-bottom: 1px dashed #cbd5e1;
+  padding-bottom: 0.35rem;
+}
+
+.unit-index {
+  color: #002147;
+  letter-spacing: 0.4px;
+}
+
+.unit-status-badge {
+  font-size: 0.62rem;
+  padding: 0.12rem 0.35rem;
+  border-radius: 2px;
+  font-weight: 800;
+}
+
+.unit-status-badge.badge-available {
+  background: #15803d;
+  color: #ffffff;
+}
+
+.unit-status-badge.badge-claimed {
+  background: #64748b;
+  color: #ffffff;
+}
+
+.unit-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.35rem 0;
+}
+
+.unit-icon-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  margin-bottom: 0.2rem;
+}
+
+.unit-available .unit-icon-wrap {
+  background: #dcfce7;
+}
+
+.unit-claimed .unit-icon-wrap {
+  background: #e2e8f0;
+}
+
+.icon-available {
+  color: #15803d;
+}
+
+.icon-claimed {
+  color: #64748b;
+}
+
+.unit-volume {
+  font-size: 0.92rem;
+  font-weight: 800;
+  color: #0f172a;
+}
+
+.unit-type {
+  font-size: 0.68rem;
+  color: #64748b;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+}
+
+.unit-footer {
+  width: 100%;
+  border-top: 1px dashed #cbd5e1;
+  padding-top: 0.35rem;
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: #64748b;
+}
+
+.text-green {
+  color: #15803d;
+}
+
+/* 4. Statutory Notice Banner */
+.gov-notice-banner {
+  border-radius: 4px;
+  padding: 1rem 1.25rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.85rem;
+  font-size: 0.88rem;
+  line-height: 1.5;
+}
+
+.gov-notice-banner.notice-info {
+  background: #f0fdf4;
+  border: 1px solid #86efac;
+  border-left: 4px solid #15803d;
+  color: #14532d;
+}
+
+.gov-notice-banner.notice-info .notice-icon {
+  color: #15803d;
+  flex-shrink: 0;
+  margin-top: 0.15rem;
+}
+
+.gov-notice-banner.notice-warning {
+  background: #fef2f2;
+  border: 1px solid #fca5a5;
+  border-left: 4px solid #b91c1c;
+  color: #7f1d1d;
+}
+
+.gov-notice-banner.notice-warning .notice-icon {
+  color: #b91c1c;
+  flex-shrink: 0;
+  margin-top: 0.15rem;
+}
+
+.notice-body strong {
+  display: block;
+  font-size: 0.92rem;
+  margin-bottom: 0.2rem;
+}
+
+.notice-body p {
+  margin: 0;
+  font-size: 0.84rem;
+}
+
+.notice-body code {
+  background: rgba(0, 0, 0, 0.06);
+  padding: 0.1rem 0.35rem;
+  border-radius: 3px;
+  font-family: var(--gov-font-mono, monospace);
+  font-size: 0.84rem;
+}
